@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body(onLoad='init_api()')
+    h1= title
+    p Hallo! Willkomen bei Tommasos' Webseite!
+    form(action='/stream' method='POST')
+      Button(type='submit') Start Sharing Screen!
+      select(name='dropDown')
+        each skill in Skills
+          option=skill
+      

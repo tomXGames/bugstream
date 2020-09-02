@@ -1,0 +1,21 @@
+extends layout
+
+
+block content
+  h1= title
+  p #{tilte}
+  img(src= '/images/image.jpg')
+  form(id="login" action="/login" method="POST")
+    label(for="username") Username: 
+    br
+    input(type='username', name='username')
+    br
+    label(for="password") Password:  
+    br
+    input(type='password', name ='password')
+    br
+    button Submit
+  br
+  a(href="/register") Don't have an account? Register!
+  br
+  button(action="/logout" method="POST") Logout

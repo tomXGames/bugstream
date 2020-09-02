@@ -1,0 +1,66 @@
+:root {
+  --primary-color: rgb(0, 70, 125);
+  --link: rgb(0, 176, 238);
+  --link-visted: rgb(0, 176, 238);
+}
+
+body {
+  max-width: 40em;
+  margin: 0 auto;
+  font: 20px/1.5 'Lato', 'Helvetica', sans-serif;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+div{
+  width: 30vw;
+  height: 30vh;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-visted);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+h2,
+h3 {
+  margin-top: 2rem;
+}
+
+h1,
+h2,
+h3,
+small,
+footer {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-weight: 500;
+}
+
+header h1,
+header a,
+header a:visited {
+  margin: 0;
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+}
